@@ -11,11 +11,11 @@ import picocli.CommandLine.Parameters;
 
 import java.util.List;
 
-@CommandLine.Command(name = "CustomerSearch", mixinStandardHelpOptions = true, version = "CusomerSearch 1.0",
+@CommandLine.Command(name = "CustomerSearch", mixinStandardHelpOptions = true, version = "CustomerSearch 1.0",
         description = "Prints customers that are within a certain distance of one of the office locations")
 public class Application implements Runnable {
 
-    @Option(names = { "-d", "--descending" }, description = "Sort by descending id. Default is ascending sorting ")
+    @Option(names = { "-d", "--descending" }, description = "Sort by descending id. Default is ascending sorting")
     private boolean desc = false;
 
     @Parameters(index = "0", paramLabel = "CITY", description = "Office location")
